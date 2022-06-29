@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeatherApp3.MainPage" BackgroundImageSource="background.png" Title=" Neige Weather App">
+
+    <StackLayout>
+        <Label Text="{Binding main.temp}" FontSize="Header" TextColor="DimGray"/>
+        <Label Text="Humidity" FontSize="30" FontAttributes="Bold"/>
+        <Label Text="{Binding main.humidity}" FontSize="30" />
+        <Label Text="Pressure" FontSize="30" FontAttributes="Bold"/>
+        <Label Text="{Binding main.pressure}"  FontSize="30" />
+        <Label Text="Clouds Cover" FontSize="30" FontAttributes="Bold"/>
+        <Label Text="{Binding clouds.all}"  FontSize="30" />
+        <Label Text="Wind Speed" FontSize="30" FontAttributes="Bold"/>
+        <Label Text="{Binding wind.speed}"  FontSize="30" />
+    </StackLayout>
+
+</ContentPage>
